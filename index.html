@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <!-- CSS Stylesheet -->
+     <link rel="stylesheet" href="style.css">
+    <title>Divinejustice - Frontend Developer</title>
+</head>
+<body>
+    <main>
+        <section class="hero flex">
+            <div class="text-center hero--left">
+                <h1 class="fs-400" data-testid="fullName">Divinejustice Oko</h1>
+                <p class="fs-200 mg-bt-2" data-testid="jobTitle">Frontend Developer</p>
+                <p class="fs-200 mg-bt-2" data-testid="currentLocation">Abakaliki, Nigeria</p>
+                <p>The current UTC time is <span data-testid="currentTimeUTC" id="currentTime"></span></p>
+                <p class="mg-t-2" data-testid="shortBio">I'm a self-taught Front End Developer from Nigeria. I'm focusing on accessibility and performance of websites and application. I want to develop accessible and interactive UIs. <br/>
+                    Currently, I am working on my HNG internship.</P>
+            </div>
+
+            <div class="hero--right">
+                <div class="img-circle">
+                    <img src="img/react.svg" alt="" class="react" width="50px" height="50px" />
+                    <img src="img/html.svg" alt="" class="html" width="50px" height="50px" />
+                    <img src="img/css3.svg" alt="" class="css" width="50px" height="50px" />
+                    <img src="img/js.svg" alt="" class="javascript" width="50px" height="50px" />
+                    <img data-testid="profilePicture" class="hero-img" src="img/divinej-300px.png" alt="" width="300px" height="300px" />
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer class="text-center">
+        <h2 class="fs-300">Get In <span class="text-brand-primary mg-bt-1">Touch</span></h2>
+
+        <p data-testid="emailAddress">email: okodivinej@gmail.com</p>
+        <p data-testid="socialLinks">Github: <a href="https://github.com/divinej">github.com/divinej</a> </p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

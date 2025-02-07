@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --clr-accent-100: #BDD1DB;
+    --clr-accent-200: #4F7B92;
+    --clr-accent-300: #070B0D;
+    --clr-brand-primary: #AE5E62;
+    --clr-brand-neutral: #fff;
+
+    --fs-100: 0.8rem;
+    --fs-200: 1.125rem;
+    --fs-300: 1.5rem;
+    --fs-400: 2.5rem;
+
+    --fw-regular: 400;
+    --fw-bold: 600;
+}
+/* CSS Reset */
+*,
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+    font-style: italic;
+}
+
+input, 
+textarea,
+button, select {
+    font: inherit;
+}
+
+em {
+    font-style: italic;
+}
+
+/* Utility Classes */
+
+.fs-100 {
+    font-size: var(--fs-100);
+}
+.fs-200 {
+    font-size: var(--fs-200);
+    font-weight: var(--fw-bold);
+}
+.fs-300 {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+}
+.fs-400 {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+}
+
+.text-accent-200 {
+    color: var(--clr-accent-200)
+}
+
+.text-brand-primary {
+    color: var(--clr-brand-primary);
+}
+.mg-bt-1 {
+    margin-bottom: 1rem;
+}
+.mg-bt-2 {
+    margin-bottom: 2rem;
+}
+.mg-t-2 {
+    margin-top: 2rem;
+}
+.mg-rt {
+    margin-right: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+
+.container {
+    padding: 50px 30px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/* Main styles */
+body {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: var(--fw-regular);
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+/* Header */
+header {
+    justify-content: space-between;
+    padding: 30px;
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    &  P > a {
+        color: var(--clr-brand-primary);
+        text-decoration: none;
+    }
+    &  P > a:hover{
+        color: var(--clr-accent-200);
+    }
+    & ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    & li {
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    & li:hover {
+        border-bottom: 2px solid var(--clr-brand-neutral);
+    }
+}
+.nav-item {
+    color: var(--clr-brand-primary);
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+    /* padding: 30px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.img-circle {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    padding: 40px;
+    margin: 50px auto;
+    border: 1px solid var(--clr-accent-200);
+
+    & img {
+        border-radius: 50%;
+        border: 1px solid var(--clr-accent-200)
+    }
+}
+
+.html {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.javascript {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+.css {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+.react {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+/* About Section */
+.about {
+    background-color: var(--clr-accent-300);
+    color: var(--clr-brand-neutral);
+    
+    & .flex {
+        gap: 0 40px;
+        margin-top: 70px;
+        align-items: center;
+    }
+    & img {
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(225, 255, 255, .4);
+        cursor: pointer;
+        transition: transform .7s ease;
+        margin-bottom: 40px;
+    }
+
+    & img:hover {
+        transform: scale(1.1);
+    }
+    & a {
+        color: var(--clr-accent-200);
+    }
+}
+
+/* Goals */
+.goals {
+    background-color: #000;
+    color: var(--clr-brand-neutral);
+} 
+
+.card-container {
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.card {
+    text-align: left;
+    color: var(--clr-brand-neutral);
+    padding: 40px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px;
+    transition: all .7s ease;
+
+    & .card--flex {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.card-brand {
+    background-color: var(--clr-brand-primary);
+}
+.card--accent-100 {
+    background-color: var(--clr-accent-100);
+    color: var(--clr-accent-300);
+}
+.card--accent-200 {
+    background-color: var(--clr-accent-200);
+}
+
+.card:hover {
+    background-color: var(--clr-brand-neutral);
+    color: var(--clr-accent-300);
+}
+
+/* Footer */
+footer {
+    background-color: var(--clr-accent-300);
+    padding: 20px;
+    color: var(--clr-brand-neutral);
+
+    a {
+        color: var(--clr-brand-neutral);
+    }
+}
+
+
+
+/* *************************************
+************** Media Querry ****************************/
+@media screen and (width >= 760px){
+    header {
+        padding: 2% 7%;
+    }
+    .nav-item {
+        color: var(--clr-brand-neutral);
+        text-decoration: none;
+    }
+    .container {
+        padding: 5% 12%;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero {
+        width: 100%;
+        justify-content: space-between;
+        z-index: -1;
+        padding-top: 0;
+       
+    }
+    .hero--right {
+        display: flex;
+        align-items: center;
+        background-color: var(--clr-brand-primary);
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+        height: 600px;
+        width: 60%;
+    }
+
+    .hero--left {
+        padding-left: 40px;
+        width: 40%;
+    }
+
+    .about {
+         margin-top: 500px;
+    }
+    .card-container {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: calc(50% - 20px);
+        height: 274px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (width >= 999px) {
+    :root {
+        --fs-400: 3rem;
+    }
+
+    .card-container {
+        gap: 0 40px;
+    }
+    .card {
+        width: calc(33.3% - 40px);
+        height: 330px;
+    }
+}
+@media screen and (width >= 1024px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
